@@ -1,0 +1,10 @@
+---
+ - name: Checking the GITHUB function
+   hosts: all
+   gather_facts: false
+   tasks:
+    - name: installing the http 
+      yum:
+       name: http
+       state: latest
+      become: yes
